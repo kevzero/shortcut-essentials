@@ -215,11 +215,10 @@ def cancella_preferito():
 def open_help():
     window_help = tk.Toplevel()
     window_help.title("Help")
-    window_help.geometry("400x400+750+300")
+    window_help.geometry("400x300+750+300")
     window_help.resizable(False, False)
     window_help.configure(background="#bfbfbf")
     window_help.grid_columnconfigure(0, weight=1)
-    # window_help.grid_rowconfigure(0, weight=1)
     imposta_icona(window_help)
 
     frame = tk.Frame(window_help, bg="#bfbfbf")
@@ -244,7 +243,14 @@ def open_help():
     email_button = ttk.Button(window_help, text="Email", cursor="hand2", command=open_email)
     email_button.grid(row=4, column=0, padx=10, pady=3, sticky="WE")
 
+    retry_image = ImageTk.PhotoImage(Image.open(r"images\retry_image .ico"))
 
+    # Creating a Label widget in the frame and displaying the image
+    label_image = tk.Label(window_help, image=retry_image, bg="#bfbfbf")
+    label_image.image = retry_image
+
+    retry_button = ttk.Button(window_help, image=retry_image, cursor="hand2", command=window_help.destroy)
+    retry_button.grid(row=5, column=0, padx=10, pady=(10, 10), sticky="SE")
 
 def open_about():
     window_about = tk.Toplevel()
