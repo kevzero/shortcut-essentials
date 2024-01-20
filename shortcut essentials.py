@@ -294,6 +294,18 @@ def open_about():
     ok_button= ttk.Button(frame, text="OK", cursor="hand2", command=window_about.destroy)
     ok_button.pack(anchor="center", pady=10)
 
+    # attacco qua le icone dei social
+
+
+
+
+
+
+
+
+
+    # finw icone dei social
+
 # main window
 root = tk.Tk()
 root.geometry("300x300+600+280")
