@@ -63,7 +63,20 @@ def open_disclaimer():
     frame = tk.Frame(window_disclaimer, bg="#bfbfbf")
     frame.grid(row=0, column=0, padx=10, pady=10, sticky="NSEW")
 
-    testo_disclaimer = "testo di prova"
+    testo_disclaimer = """
+    ACcybertech.it is a young Italian company that deals
+    with the creation of websites, web applications,
+    desktop & mobile applications.\n
+    ------------------------------------------------------------------\n
+    My vision of freedom insinuates itself into the philosophical
+    folds of human existence, celebrating autonomy and rejecting
+    any boundary that limits the expansion of thought. For me,
+    freedom is an expression of the soul that manifests itself in
+    the diversity of perceptions, without predefined constraints.
+    Information technology, in this context, becomes a means
+    through which to explore the infinite vastness of human
+    possibilities, without brakes imposed from outside.
+    """
     label = tk.Label(frame, text=testo_disclaimer, bg="#bfbfbf", justify="left", wraplength=450, padx=10, pady=10)
     label.pack(fill="both", expand=True)
 
@@ -215,18 +228,19 @@ def cancella_preferito():
 def open_help():
     window_help = tk.Toplevel()
     window_help.title("Help")
-    window_help.geometry("400x300+750+300")
+    window_help.geometry("400x405+750+300")
     window_help.resizable(False, False)
     window_help.configure(background="#bfbfbf")
     window_help.grid_columnconfigure(0, weight=1)
     imposta_icona(window_help)
+    set_custom_style()
 
     frame = tk.Frame(window_help, bg="#bfbfbf")
-    frame.grid(row=0, column=0, padx=10, pady=(10,5), sticky="NSEW")
+    frame.grid(row=0, column=0, padx=10, pady=(10,5), sticky="WE")
 
     testo_help = """
     For any clarification or suggestion regarding this app do not
-    hesitate to contact me
+    hesitate to contact me:
     """
     label = tk.Label(frame, text=testo_help, bg="#bfbfbf", justify="left", wraplength=450, padx=10, pady=10)
     label.pack(fill="both", expand=True)
@@ -244,20 +258,76 @@ def open_help():
     email_button.grid(row=4, column=0, padx=10, pady=3, sticky="WE")
 
     retry_image = ImageTk.PhotoImage(Image.open(r"images\retry_image .ico"))
+    facebook_contact = ImageTk.PhotoImage(Image.open(r"images\social_image\facebook.ico"))
+    instagram_contact = ImageTk.PhotoImage(Image.open(r"images/social_image/instagram.ico"))
+    linkedin_contact = ImageTk.PhotoImage(Image.open(r"images\social_image\linkedin.ico"))
+    github_contact = ImageTk.PhotoImage(Image.open(r"images\social_image\github-logo.ico"))
+    github_contact_1 = ImageTk.PhotoImage(Image.open(r"images\social_image\github-logo_1.ico"))
+    reddit_contact = ImageTk.PhotoImage(Image.open(r"images/social_image/reddit.ico"))
+    telegram_contact = ImageTk.PhotoImage(Image.open(r"images\social_image\telegram.ico"))
+    twitter_x_contact = ImageTk.PhotoImage(Image.open(r"images\social_image\twitter_x.ico"))
 
-    # Creating a Label widget in the frame and displaying the image
+    frame_2 = tk.Frame(window_help, bg="#bfbfbf")
+    frame_2.grid(row=5, column=0, padx=10, pady=(10,5), sticky="WE")
+
+    label_image = tk.Label(frame_2, image=facebook_contact,  bg="#bfbfbf")
+    label_image.image = facebook_contact
+    facebook_contact_1_button= ttk.Button(frame_2, image=facebook_contact, cursor="hand2", command=lambda: apri_link("https://www.facebook.com/antonino.cacciottoli1979/") )
+    facebook_contact_1_button.grid(row=5, column=0, padx=60, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=facebook_contact)
+    label_image.image = facebook_contact
+    facebook_contact_button= ttk.Button(frame_2, image=facebook_contact, cursor="hand2", command=lambda: apri_link("https://www.facebook.com/accybertech.it/") )
+    facebook_contact_button.grid(row=5, column=0, padx=110, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=instagram_contact)
+    label_image.image = instagram_contact
+    instagram_contact_button= ttk.Button(frame_2, image=instagram_contact, cursor="hand2", command=lambda: apri_link("https://www.instagram.com/accybertech.it/") )
+    instagram_contact_button.grid(row=5, column=0, padx=160, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=linkedin_contact)
+    label_image.image = linkedin_contact
+    linkedin_contact_button= ttk.Button(frame_2, image=linkedin_contact, cursor="hand2", command=lambda: apri_link("https://www.linkedin.com/in/antonino-cacciottoli-126509263/") )
+    linkedin_contact_button.grid(row=5, column=0, padx=210, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=github_contact)
+    label_image.image = github_contact
+    github_contact_button= ttk.Button(frame_2, image=github_contact, cursor="hand2", command=lambda: apri_link("https://github.com/kevzero") )
+    github_contact_button.grid(row=5, column=0, padx=260, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=github_contact_1)
+    label_image.image = github_contact_1
+    github_contact_1_button= ttk.Button(frame_2, image=github_contact_1, cursor="hand2", command=lambda: apri_link("https://accybertech-it.github.io/") )
+    github_contact_1_button.grid(row=6, column=0, padx=90, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=reddit_contact)
+    label_image.image = reddit_contact
+    reddit_contact_button= ttk.Button(frame_2, image=reddit_contact, cursor="hand2", command=lambda: apri_link("https://www.reddit.com/r/accybertechworld/") )
+    reddit_contact_button.grid(row=6, column=0, padx=140, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=telegram_contact)
+    label_image.image = telegram_contact
+    telegram_contact_button= ttk.Button(frame_2, image=telegram_contact, cursor="hand2", command=lambda: apri_link("https://t.me/+VtkhpJviZRs5MTg8") )
+    telegram_contact_button.grid(row=6, column=0, padx=190, pady=3, sticky="W")
+
+    label_image = tk.Label(frame_2, image=twitter_x_contact)
+    label_image.image = twitter_x_contact
+    twitter_x_contact_button= ttk.Button(frame_2, image=twitter_x_contact, cursor="hand2", command=lambda: apri_link("https://twitter.com/antoninocyber79") )
+    twitter_x_contact_button.grid(row=6, column=0, padx=240, pady=3, sticky="W")
+
     label_image = tk.Label(window_help, image=retry_image, bg="#bfbfbf")
     label_image.image = retry_image
-
     retry_button = ttk.Button(window_help, image=retry_image, cursor="hand2", command=window_help.destroy)
-    retry_button.grid(row=5, column=0, padx=10, pady=(10, 10), sticky="SE")
+    retry_button.grid(row=7, column=0, padx=10, pady=(0, 0), sticky="S")
 
 def open_about():
     window_about = tk.Toplevel()
     window_about.title("About")
-    window_about.geometry("400x400+750+300")
+    window_about.geometry("400x310+750+300")
     window_about.resizable(False, False)
     window_about.configure(background="#bfbfbf")
+    window_about.grid_columnconfigure(0, weight=1)
+    window_about.grid_rowconfigure(0, weight=1)
     imposta_icona(window_about)
 
     frame = tk.Frame(window_about, bg="#bfbfbf", padx=10, pady=0)
@@ -275,11 +345,6 @@ def open_about():
 
     testo_about = """
     This app was created by Antonino Cacciottoli & ACcybertech.it\n
-    ACcybertech.it is a young Italian company that deals
-    with the creation of websites, web applications,
-    desktop & mobile applications.\n
-    For more information visit our website:
-    www.accybertech.it
     """
 
     label_text = tk.Label(frame, text=testo_about, bg="#bfbfbf", justify="left", wraplength=380)
@@ -292,7 +357,7 @@ def open_about():
     copyright_label.bind("<Button-1>", lambda event: open_MIT_LICENSE())
 
     ok_button= ttk.Button(frame, text="OK", cursor="hand2", command=window_about.destroy)
-    ok_button.pack(anchor="center", pady=10)
+    ok_button.pack(anchor="center", pady=(30,5))
 
 # main window
 root = tk.Tk()
