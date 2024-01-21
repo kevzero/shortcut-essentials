@@ -67,6 +67,7 @@ def open_disclaimer():
     ACcybertech.it is a young Italian company that deals
     with the creation of websites, web applications,
     desktop & mobile applications.\n
+    ------------------------------------------------------------------\n
     My vision of freedom insinuates itself into the philosophical
     folds of human existence, celebrating autonomy and rejecting
     any boundary that limits the expansion of thought. For me,
