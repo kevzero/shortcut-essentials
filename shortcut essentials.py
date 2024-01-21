@@ -53,7 +53,7 @@ def open_disclaimer():
     """
     window_disclaimer = tk.Toplevel()
     window_disclaimer.title("Disclaimer")
-    window_disclaimer.geometry("400x400+750+300")
+    window_disclaimer.geometry("400x300+750+300")
     window_disclaimer.resizable(False, False)
     window_disclaimer.configure(background="#bfbfbf")
     window_disclaimer.grid_columnconfigure(0, weight=1)
@@ -191,6 +191,10 @@ def cancella_tutti_preferiti():
     """
     This function deletes all the favorites.
     """
+    if not any(preferiti):
+        messagebox.showinfo("Empty Favorites", "The favorites list is already empty!")
+        return
+
     conferma = messagebox.askyesno("Confirm Deletion", "Are you sure you want to delete all bookmarks?")
     if conferma:
         for i, riga_pulsanti in enumerate(pulsanti):
@@ -198,12 +202,16 @@ def cancella_tutti_preferiti():
                 pulsante.config(text=f"Button {i * 4 + j + 1}")
                 preferiti[i * 4 + j] = None
         salva_preferiti()
-        messagebox.showinfo("Delete All Favorites", "All Favorite successfully deleted!")
+        messagebox.showinfo("Delete All Favorites", "All favorites successfully deleted!")
 
 def cancella_preferito():
     """
     This function deletes a favorite.
     """
+    if not any(preferiti):
+        messagebox.showinfo("Empty Favorites", "The favorites list is already empty!")
+        return
+
     frame_selezionato = simpledialog.askinteger("Select Frame", "Enter frame number (1, 2, or 3):", minvalue=1, maxvalue=3)
 
     # Check if the user canceled the frame selection
