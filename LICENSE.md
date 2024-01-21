@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2024 Antonino Cacciottoli accybertech.it www.accybertech.it
+Copyright (c) 2024 Antonino Cacciottoli & ACcybertech.it 
 
 L’autorizzazione è concessa gratuitamente, a chiunque ottenga una copia di questo 
 software e dei file di documentazione associati (il “Software”), di trattare esso 
@@ -24,7 +24,7 @@ L’UTILIZZO DI QUESTO SOFTWARE È CONCESSO ESCLUSIVAMENTE PER SCOPI NON COMMERC
 -------------------------------------------------
 MIT License
 
-Copyright (c) 2024 Antonino Cacciottoli accybertech.it www.accybertech.it
+Copyright (c) 2024 Antonino Cacciottoli & ACcybertech.it 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
