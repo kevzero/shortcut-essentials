@@ -1,4 +1,4 @@
-## Shortcut Essentials V1.0 BETA
+## SHORTCUT ESSENTIALS V1.0 BETA
 
 ### Description:
 Shortcut Essentials is an application designed to simplify access to your favorite websites and social media through a series of shortcut buttons. The app offers a fast and efficient solution to reach your favorite online destinations, reducing navigation time and providing you with an intuitive interface.
@@ -20,6 +20,8 @@ We are open to contributions and suggestions to improve Shortcut Essentials. Fee
 
 License
 Shortcut Essentials is distributed under the MIT license. See the 'LICENSE' file for more information on the license.
+
+🖥️  [Read the release](https://github.com/kevzero/shortcut-essentials/releases/tag/release)  💻
 
 ![ACcybertech_logo](https://github.com/kevzero/shortcut-essentials/assets/116445747/523e1500-a351-453a-9df9-3de059d34b66)
 
