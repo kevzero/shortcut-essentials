@@ -1,4 +1,4 @@
-## Shortcut Essentials V1.0  
+## Shortcut Essentials V1.0 BETA
 ### Descrizione:
 Shortcut Essentials è un'applicazione progettata per semplificare l'accesso ai tuoi siti web e social preferiti attraverso una serie di pulsanti shortcut. L'app offre una soluzione veloce ed efficiente per raggiungere le tue destinazioni online preferite, riducendo il tempo di navigazione e mettendo a tua disposizione un'interfaccia intuitiva.
 
