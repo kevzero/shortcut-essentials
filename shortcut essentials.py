@@ -348,11 +348,12 @@ def open_about():
     label_image.image = image_SE
     label_image.pack(anchor="center")
 
-    app_label= tk.Label(frame, text="shortcut essentials v1.0", font=("Helvetica", 12, "bold"), bg="#bfbfbf")
+    app_label= tk.Label(frame, text="shortcut essentials v1.0 BETA", font=("Helvetica", 12, "bold"), bg="#bfbfbf")
     app_label.pack(anchor="center", pady=10)
 
     testo_about = """
     This app was created by Antonino Cacciottoli & ACcybertech.it\n
+                                        Experimental Phase\n
     """
 
     label_text = tk.Label(frame, text=testo_about, bg="#bfbfbf", justify="left", wraplength=380)
