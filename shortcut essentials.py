@@ -369,7 +369,7 @@ def open_about():
 
 # main window
 root = tk.Tk()
-root.geometry("300x300+600+280")
+root.geometry("320x300+600+280")
 root.title("shortcut essentials v1.0 BETA")
 root.resizable(False, False)
 root.configure(background="#bfbfbf")
