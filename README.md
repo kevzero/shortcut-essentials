@@ -21,7 +21,7 @@ We are open to contributions and suggestions to improve Shortcut Essentials. Fee
 License
 Shortcut Essentials is distributed under the MIT license. See the 'LICENSE' file for more information on the license.
 
-🖥️  [Read the release](https://github.com/kevzero/shortcut-essentials/releases/tag/release)  💻
+🖥️  [[Read the release](https://github.com/kevzero/shortcut-essentials/releases/tag/release_beta_final)]  💻
 
 ![ACcybertech_logo](https://github.com/kevzero/shortcut-essentials/assets/116445747/523e1500-a351-453a-9df9-3de059d34b66)
 
